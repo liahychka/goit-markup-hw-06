@@ -32,8 +32,7 @@ body {
     color: #2e2f42;
 }
 
-
-.menu-item-studio {
+.menu-link-studio {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -41,12 +40,12 @@ body {
     color: #2e2f42;
 }
 
-.menu-item-studio:hover,
-.menu-item-studio:focus {
-    #404bbf
+.menu-link-studio:hover,
+.menu-link-studio:focus {
+    color: #404bbf;
 }
 
-.menu-item-nav {
+.menu-link-nav {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
