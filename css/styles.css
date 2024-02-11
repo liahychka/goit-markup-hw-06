@@ -48,8 +48,8 @@ body {
     color: #2e2f42;
 }
 
-.menu-item:hover,
-.menu-item:focus {
+.menu-item-studio:hover,
+.menu-item-studio:focus {
     color: #404bbf;
 }
 
