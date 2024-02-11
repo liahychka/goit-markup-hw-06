@@ -10,31 +10,37 @@ button {
     cursor: pointer;
 }
 
-img {
-    display: block;
-}
-
 body {
     font-family: "Roboto", sans-serif;
     background: #fff;
+    color: #434455;
 }
 
-.logo {
+/* =========== Header styles =========== */
+
+.logo-header {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2e2f42;;
-}
-
-.logo-blue {
     color: #4d5ae5;
 }
 
+.logo-black-header {
+    color: #2e2f42;
+}
+
+.menu-link-studio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
 .menu-link {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -63,7 +69,15 @@ body {
     color: #404bbf; 
 }
 
+.page-contact {
+    font-style: normal
+}
+
 /* =========== Hero Section styles =========== */
+
+.hero {
+    background: #2e2f42;
+}
 
 .main-title {
     font-weight: 700;
@@ -81,8 +95,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    background: #404bbf;
     cursor: pointer;
+    background-color: #4D5AE5;
 }
 
 .btn-service:hover,
@@ -110,10 +124,18 @@ body {
 
 /* =========== Team Section styles =========== */
 
+.team {
+    background-color: #F4F4FD;
+}
+
+.team-list-item {
+    background-color: #FFFFFF;
+}
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
@@ -168,10 +190,28 @@ body {
 
 /* =========== /Footer styles =========== */
 
+.page-footer {
+    background-color: #2e2f42;
+}
+
 .page-footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     background: #2e2f42;
+}
+
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.logo-white-footer {
+    color: #f4f4fd;
 }
