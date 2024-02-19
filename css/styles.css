@@ -263,6 +263,7 @@ img {
 /* =========== Portfolio styles =========== */
 
 .portfolio-container {
+    border-top: none;
 }
 
 .portfolio-list {
@@ -277,7 +278,6 @@ img {
 .portfolio-list-item {
     border: 1px solid #e7e9fc;
     width: 360px;
-    border-top: none;
 }
 
 .section-portfolio {
