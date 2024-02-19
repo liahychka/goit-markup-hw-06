@@ -277,6 +277,7 @@ img {
 .portfolio-list-item {
     border: 1px solid #e7e9fc;
     width: 360px;
+    border-top: none;
 }
 
 .section-portfolio {
@@ -320,14 +321,9 @@ img {
 
 /* =========== /Footer styles =========== */
 
-.footer-container {
-    padding: 100px 0;
-}
-
 .page-footer {
     background-color: #2e2f42;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 100px 0;
 }
 
 .page-footer-text {
