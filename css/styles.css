@@ -1,5 +1,19 @@
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 ul, ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 a {
@@ -18,6 +32,32 @@ body {
 
 /* =========== Header styles =========== */
 
+.page-header {
+    border: 1px solid #000;
+    width: 1440px;
+    height: 72px;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-list {
+    display: flex;
+    gap: 40px;
+}
+
 .logo-header {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -26,6 +66,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-black-header {
@@ -38,6 +79,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 }
 
 .menu-link:hover,
@@ -58,33 +101,54 @@ body {
 }
 
 .page-contact {
-    font-style: normal
+    font-style: normal;
+    margin-left: auto;
 }
 
 /* =========== Hero Section styles =========== */
 
-.hero {
-    background: #2e2f42;
+.btn-service {
+    display: flex;
+    align-items: center;
 }
 
-.main-title {
+.main-title { 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 496px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07;
+    line-height: 1.07143;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    background:#2e2f42;
+}
+
+.hero {
+    background: #2e2f42;
+    padding: 188px 0;
 }
 
 .btn-service {
-    font-weight: 500;
+    background: #4d5ae5;
+    color: #fff;
+    font-family: Roboto;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #fff;
-    cursor: pointer;
-    background-color: #4D5AE5;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 32px;
+    gap: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px;
 }
 
 .btn-service:hover,
@@ -94,6 +158,33 @@ body {
 }
 
 /* =========== Benefits Section styles =========== */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-list-item {
+    width: calc((100% - 72px) / 4);
+}
 
 .benefits-list-title {
     font-weight: 500;
@@ -112,12 +203,31 @@ body {
 
 /* =========== Team Section styles =========== */
 
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
 .team {
-    background-color: #F4F4FD;
+    background-color: #F4F4FD; 
+    padding-top: 60px;
+    padding-bottom: 60px;   
+}
+
+.team-item-name {
+    text-align: center;
+    width: calc((100% - 48px) / 4);
+    padding-left: 1px;
+    padding-right: 16px;
 }
 
 .team-list-item {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; 
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+            0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 72px) / 4);
 }
 
 .section-title {
@@ -128,6 +238,7 @@ body {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
 .team-list-title {
@@ -149,6 +260,23 @@ body {
 
 /* =========== Portfolio styles =========== */
 
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+
+.portfolio-list-item {
+    border: 1px solid #e7e9fc;
+    width: 360px;
+}
+
+.section-portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
@@ -157,6 +285,7 @@ body {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
 .portfolio-item-title {
@@ -178,8 +307,15 @@ body {
 
 /* =========== /Footer styles =========== */
 
+.footer-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .page-footer {
     background-color: #2e2f42;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .page-footer-text {
@@ -188,6 +324,7 @@ body {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     background: #2e2f42;
+    max-width: 264px;
 }
 
 .logo-footer {
@@ -198,6 +335,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    max-width: 115px;
 }
 
 .logo-white-footer {
