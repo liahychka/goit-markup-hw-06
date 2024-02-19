@@ -30,10 +30,14 @@ body {
     color: #434455;
 }
 
+img {
+    display: block;
+}
+
 /* =========== Header styles =========== */
 
 .page-header {
-    border: 1px solid #000;
+    border-bottom: 1px solid #e7e9fc;
     width: 1440px;
     height: 72px;
 }
@@ -107,11 +111,6 @@ body {
 
 /* =========== Hero Section styles =========== */
 
-.btn-service {
-    display: flex;
-    align-items: center;
-}
-
 .main-title { 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     max-width: 496px;
@@ -132,7 +131,7 @@ body {
     padding: 188px 0;
 }
 
-.btn-service {
+.btn-service-block {
     background: #4d5ae5;
     color: #fff;
     font-family: Roboto;
@@ -149,6 +148,10 @@ body {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     min-width: 169px;
+    height: 56px; 
+    display: block;
+    align-items: center;
+    cursor: pointer;
 }
 
 .btn-service:hover,
@@ -170,12 +173,14 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+    margin-bottom: 8px;
 }
 
 .benefits {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 120px 0;
 }
+
+
 
 .benefits-list {
     display: flex;
@@ -210,8 +215,7 @@ body {
 
 .team {
     background-color: #F4F4FD; 
-    padding-top: 60px;
-    padding-bottom: 60px;   
+    padding: 120px 0;
 }
 
 .team-item-name {
@@ -245,6 +249,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-list-text {
@@ -257,11 +262,16 @@ body {
 
 /* =========== Portfolio styles =========== */
 
+.portfolio-container {
+
+}
+
 .portfolio-list {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
     text-align: left;
+    row-gap: 48px;
 }
 
 
@@ -271,8 +281,8 @@ body {
 }
 
 .section-portfolio {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -283,7 +293,7 @@ body {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    margin-bottom: 72px;
+    margin-bottom: 8px;
 }
 
 .portfolio-item-title {
@@ -310,8 +320,8 @@ body {
 /* =========== /Footer styles =========== */
 
 .footer-container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .page-footer {
@@ -338,6 +348,8 @@ body {
     text-transform: uppercase;
     color: #4d5ae5;
     max-width: 115px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-white-footer {
