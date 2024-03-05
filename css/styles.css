@@ -601,8 +601,8 @@ img {
     fill: #2E2F42;
 }
 
-.icon-close-btn:hover,
-.icon-close-btn:focus {
+.backdrop-btn-close:hover .icon-close-btn,
+.backdrop-btn-close:focus .icon-close-btn {
     fill: #ffffff
 }
 
@@ -716,10 +716,9 @@ icon-class-svg:focus {
 
 
 .label-for-contacts:checked + .privacy-policy-accept .our-own-checkbox {
-        background-color: #404bbf;
+    background-color: #404bbf;
     fill: #F4F4FD;
     border: none;
-    fill: #F4F4FD;
 }
 
 
@@ -778,3 +777,8 @@ icon-class-svg:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.label-for-contacts-checkbox:checked .our-own-checkbox {
+        background-color: #404bbf;
+        fill: #F4F4FD;
+        border: none;
+}
