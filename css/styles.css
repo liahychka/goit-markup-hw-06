@@ -545,26 +545,25 @@ img {
     margin-left: 16px;
 }
 
-/* =========== /Backdrop styles =========== */
+/* =========== /Modal styles =========== */
 
 .backdrop {
     position: fixed;
     z-index: 999999;
     top: 0;
     left: 0;
-    background-color: rgba(46, 47, 66, 0.4);
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(46, 47, 66, 0.4);
     opacity: 1;
-    visibility: hidden;
+   /* visibility: hidden;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .backdrop.is-open {
-    opacity: 0;
+    opacity: 0; */
 }
 
-.modal {
+.modal-window-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -578,27 +577,27 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-btn {    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    fill: black;
-    background-color: #e7e9fc;
-    border: 15px;
-    border-radius: 50%;
-    padding: 0;
+.backdrop-btn-close {    
     position: absolute;
     top: 24px;
     right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    cursor: pointer;
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.backdrop-btn:hover, 
-.backdrop-btn:focus {
+.backdrop-btn-close:hover, 
+.backdrop-btn-close:focus {
     background-color: #404bbf;
     border: none;
 }
@@ -612,17 +611,35 @@ img {
     fill: #ffffff
 }
 
-
-/* =========== /Input styles =========== */
+.box-for-modal {
+    padding: 72px 24px 24px 24px;
+}
 
 .text-leave-contact {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
     text-align: center;
-    color: #2e2f42;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
     margin-bottom: 16px;
+}
+
+.box-for-input {
+    margin-bottom: 8px;
+}
+
+.label-for-contacts {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.box-icons-input {
+    position: relative;
 }
 
 .input-for-contacts {
@@ -640,29 +657,6 @@ img {
     border-color: #4D5AE5;
 }
 
-.label-for-contacts {
-    line-height: 1.17;
-    display: block;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    margin-bottom: 4px;
-}
-
-.box-for-input {
-    margin-bottom: 8px;
-}
-
-.box-for-input-checkbox {
-    margin-top: 16px;
-}
-
-.box-icons-input {
-    position: relative;
-}
-
 .icon-class-svg {
     position: absolute;
     top: 50%;
@@ -671,20 +665,22 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-for-contacts:focus + .icon-class-svg {
-    fill: #4d5ae5;
+.box-for-input-comment {
+    margin-bottom: 16px
 }
+
+
 
 .comment-textarea-box {
     width: 100%;
     height: 120px;
+    line-height: 1.17;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
@@ -692,13 +688,26 @@ img {
     outline: transparent;
 }
 
+.comment-textarea-box:focus {
+    border-color: #4D5AE5;
+}
+
+.box-for-input-checkbox {
+    margin-top: 16px;
+}
+
+
+.input-for-contacts:focus + .icon-class-svg {
+    fill: #4d5ae5;
+}
+
+
+
 .comment-textarea-box::placeholder {
     color: rgba(46, 47, 66, 0.4);
 }
 
-.comment-textarea-box:focus {
-    border-color: #4D5AE5;
-}
+
 
 .privacy-policy-accept {
     font-family: "Roboto", sans-serif;
@@ -767,6 +776,3 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-for-input-comment {
-    margin-bottom: 16px
-}
