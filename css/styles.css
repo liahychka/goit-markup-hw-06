@@ -547,7 +547,7 @@ img {
 
 /* =========== /Modal styles =========== */
 
-.backdrop {
+.backdrop-for-modal {
     position: fixed;
     z-index: 999999;
     top: 0;
