@@ -655,6 +655,10 @@ img {
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+ 
+icon-class-svg:focus {
+    fill: #4D5AE5;
+}
 
 .box-for-input-comment {
     margin-bottom: 16px
@@ -710,12 +714,14 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-for-contacts:checked + 
-.privacy-policy-accept 
-.our-own-checkbox {
-    background-color: #404bbf;
+
+.label-for-contacts:checked + .privacy-policy-accept .our-own-checkbox {
+        background-color: #404bbf;
     fill: #F4F4FD;
-    border: none
+    border: none;
+    fill: #F4F4FD;
+}
+
 
 
 
@@ -734,9 +740,6 @@ img {
 
 
 .privacy-policy-link {
-    line-height: 1.33333;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
     color: #4d5ae5;
 }
 
