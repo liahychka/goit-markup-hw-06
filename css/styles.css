@@ -211,7 +211,6 @@ img {
 }
 
 
-
 .benefits-list {
     display: flex;
     gap: 24px;
@@ -492,66 +491,8 @@ img {
     margin-left: 80px;
 }
 
-.box-for-input-btn {
-    display: flex;
-    gap: 24px;
-}
-
-/* =========== /Backdrop styles =========== */
-
-.backdrop {
-    position: fixed;
-    z-index: 999999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
-    visibility: hidden;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility cubic-bezier(0.4, 0, 0.2, 1) ;
-}
-
-.backdrop.is-open {
-    opacity: 0;
-}
-
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 480px;
-    background-color: #fcfcfc;
-    border-radius: 4px;
-    padding: 72px 24px 24px 24px;
-}
-
-.backdrop-btn {    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    fill: black;
-    background-color: #e7e9fc;
-    border: 15px;
-    border-radius: 50%;
-    padding: 0;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: absolute;
-    top: 24px;
-    right: 24px;
-}
-
-
-.backdrop-btn:hover, 
-.backdrop-btn:focus {
-    background-color: #404BBF;
-    fill:white;
-}
-
-.label-for-contacts-footer {
+.text-input-telegram {
+    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -565,36 +506,111 @@ img {
     width: 264px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #2e2f42;
+    background-color: transparent;
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
     padding-left: 16px;
-    outline: transparent;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
 }
 
-.box-btn-telegram {
+.btn-for-telegram {
+    min-width: 165px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-        border-radius: 4px;
-        padding: 8px 24px;
-        width: 165px;
-        height: 40px;
-        background: #4d5ae5;
-        border: none;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        text-align: center;
-        color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-for-telegram {
+    display: flex;
+    gap: 24px;
+}
+
+.svg-for-telegram {
+    margin-left: 16px;
+}
+
+/* =========== /Backdrop styles =========== */
+
+.backdrop {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: hidden;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.backdrop.is-open {
+    opacity: 0;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 584px;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    padding: 72px 24px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-btn {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    fill: black;
+    background-color: #e7e9fc;
+    border: 15px;
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+.backdrop-btn:hover, 
+.backdrop-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.icon-close-btn {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close-btn:hover,
+.icon-close-btn:focus {
+    fill: #ffffff
+}
 
 
 /* =========== /Input styles =========== */
@@ -616,14 +632,16 @@ img {
     border-radius: 4px;
     padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+    background-color: transparent;
 }
 
 .input-for-contacts:focus {
-    border-color: #404bbf;
-    outline: transparent;
+    border-color: #4D5AE5;
 }
 
 .label-for-contacts {
+    line-height: 1.17;
     display: block;
     font-weight: 400;
     font-size: 12px;
@@ -663,15 +681,15 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     resize: none;
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-right: auto;
-    padding-bottom: auto;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
 }
 
 .comment-textarea-box::placeholder {
@@ -679,15 +697,14 @@ img {
 }
 
 .comment-textarea-box:focus {
-    border-color: #404bbf;
-    outline: transparent;
+    border-color: #4D5AE5;
 }
 
 .privacy-policy-accept {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
@@ -709,14 +726,15 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     cursor: pointer;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-for-contacts:checked + 
 .privacy-policy-accept 
 .our-own-checkbox {
-    background-color: #4d5ae5;
-    fill: #f0f0f7;
-    border-color: #4d5ae5;
+    background-color: #404bbf;
+    fill: #F4F4FD;
+    border: none;
 }
 
 .label-for-contacts:focus + 
@@ -730,6 +748,7 @@ img {
 }
 
 .btn-finish-send {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -738,11 +757,16 @@ img {
     color: #fff;
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
     border: none;
     margin-left: 119px;
     margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box-for-input-comment {
+    margin-bottom: 16px
 }
