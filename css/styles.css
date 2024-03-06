@@ -761,3 +761,7 @@ icon-class-svg:focus {
     fill: #F4F4FD;
     border: none;
 }
+
+.svg-for-checkbox {
+    fill: #F4F4FD;
+}
