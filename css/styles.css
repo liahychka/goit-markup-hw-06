@@ -607,12 +607,14 @@ img {
     .portfolio-list {
             row-gap: 48px;
         }
+
         .overlay-box-img {
             position: relative;
             overflow: hidden;
         }
     
         .portfolio-overlay-text {
+            display: block;
             position: absolute;
             top: 0;
             left: 0;
@@ -640,6 +642,7 @@ img {
         .portfolio-list-item:focus .portfolio-overlay-text {
             transform: translateY(0%);
         }
+
 }
 
 /* footer phone */
@@ -1114,7 +1117,6 @@ icon-class-svg:focus {
 
 .modal {
     width: 320px;
-    min-height: 599px;
     background: #fff;
     position: absolute;
     top: 50%;
