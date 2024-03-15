@@ -652,12 +652,6 @@ img {
             background: #2e2f42;
         }
         
-        .footer-container {
-            /* display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;   */
-        }
-        
         .footer-logo {
             display: flex;
             flex-wrap: wrap;
@@ -757,9 +751,10 @@ img {
             border-radius: 4px;
             width: 288px;
             height: 40px;
-            color: #ffffff;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            color: #fff;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
             outline: transparent;
+            opacity: 0.3;
         }
 
         .btn-for-telegram {
