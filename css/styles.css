@@ -1013,13 +1013,16 @@ icon-class-svg:focus {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    display: flex;
+    gap: 8px;
 }
 
 .our-own-checkbox {
     display: inline-flex;
+    margin: auto;
     justify-content: center;
     align-items: center;
-    width: 16px;
+    width: 20px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1038,6 +1041,7 @@ icon-class-svg:focus {
 
 .privacy-policy-link {
     color: #4d5ae5;
+    text-decoration: underline;
 }
 
 .label-for-contacts:focus+.privacy-policy-accept .our-own-checkbox {
@@ -1084,6 +1088,16 @@ icon-class-svg:focus {
         width: 408px;
         height: 584px;
     }
+
+    .privacy-policy-accept {
+        display: block;
+        
+    }
+    .our-own-checkbox {
+        width: 16px;
+        margin-right: 6px;
+    }
+        
 }
 
 /* desktop modal */
