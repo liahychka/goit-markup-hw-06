@@ -417,14 +417,20 @@ img {
 
 
 .team {
-    padding-bottom: 24px;
     padding-top: 96px;
+    padding-bottom: 96px;
     background: #f4f4fd;
 }
 
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+    justify-content: center;
+}
 
 .team-list-item {
-    margin-bottom: 72px;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -499,23 +505,14 @@ img {
     background-color: #31d0aa;
 }
 
-.box-for-person {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 /* tablet team */
 
 @media screen and (min-width: 768px) {
     .team-list {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
-        column-gap: 64px;
-        justify-content: center;
-        align-items: center;
+        gap: 64px 24px;
     }
 }
 
@@ -523,11 +520,12 @@ img {
 /* desktop team */
 
 @media screen and (min-width: 1158px) {
-    .team-list {
-        display: flex;
-        gap: 24px;
+   .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
+ 
 
 
 /* phone portfolio */
@@ -537,12 +535,17 @@ img {
 }
 
 .section-portfolio {
-    padding-bottom: 48px;
+    padding-bottom: 96px;
     padding-top: 96px;
 }
 
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
 .portfolio-list-item {
-    margin-bottom: 48px;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
 }
@@ -553,7 +556,6 @@ img {
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-
 
 .portfolio-title {
     margin-bottom: 72px;
@@ -586,24 +588,18 @@ img {
 
 @media screen and (min-width: 768px) { 
     .portfolio-list {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 72px;
-    }
-
-    .box-for-card {
-        width: 356px;
-        height: 420px;
+        gap: 72px 24px;
     }
 }
 
 /* desktop portfolio */
 
 @media screen and (min-width: 1158px) {
-    .section-portfolio {
-        padding: 120px 0;
-    }
+        .section-portfolio {
+            padding: 120px 0;
+        }
     .portfolio-list {
             row-gap: 48px;
         }
@@ -701,7 +697,7 @@ img {
             letter-spacing: 0.02em;
             color: #fff;
             text-align: center;
-            padding-bottom: 16px;
+            margin-bottom: 16px;
         }
     
         .social-list-footer {
@@ -846,14 +842,19 @@ img {
 
     .footer-logo {
         margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .box-link {
         margin-right: 80px;
-        margin-left: 0px;
+        margin-left: 0;
+        margin-bottom: 0;
     }
     .input-for-contacts-footer {
         opacity: 1;
+    }
+    .box-for-input-btn {
+        margin-bottom: 0;
     }
 
 }
