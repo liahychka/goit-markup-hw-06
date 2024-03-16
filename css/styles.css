@@ -375,42 +375,44 @@ img {
 
 @media screen and (min-width: 1158px) {
     .benefits {
-            padding: 120px 0;
-        }
+        padding: 120px 0;
+    }
     
-        .benefits-list {
-            gap: 24px;
-        }
+    .benefits-list {
+        gap: 24px;
+    }
     
-        .benefits-list-item {
-            width: calc((100% - 72px) / 4);
-        }
+    .benefits-list-item {
+        width: calc((100% - 72px) / 4);
+    }
 
-        .benefits-list-title {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 1.2;
-            text-align: left;
-        }
+    .benefits-list-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: left;
+    }
     
-        .benefits-list-text {
-            font-weight: 400;
-        }
-        .div-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 112px;
-            margin-bottom: 8px;
-            box-sizing: border-box;
-            border: 1px solid rgb(142, 143, 153);
-            border-radius: 4px;
-            background-color: #f4f4fd;
-        }
+    .benefits-list-text {
+        font-weight: 400;
+    }
 
-        .icon-benefits {
-            display: block;
-        }
+    .div-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+        border: 1px solid rgb(142, 143, 153);
+        border-radius: 4px;
+        background-color: #f4f4fd;
+    }
+
+    .icon-benefits {
+        display: block;
+    }
+
 }
 
 /* phone team */
@@ -643,147 +645,145 @@ img {
 
 /* footer phone */
 
-        .page-footer {
-            padding: 96px 0 96px;
-            background: #2e2f42;
-        }
-        
-        .footer-logo {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            text-align: center;
-        }
+.page-footer {
+    padding: 96px 0 96px;
+    background: #2e2f42;
+}
 
-        .logo-white-footer {
-            color: #f4f4fd;
-        }
+.footer-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
 
-        .logo-footer {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 1.17;
-            letter-spacing: 0.03em;
-            display: inline-block;
-            text-transform: uppercase;
-            color: #4d5ae5;
-            margin-bottom: 16px;
-        }
+.logo-white-footer {
+    color: #f4f4fd;
+}
 
-        .footer-logo {
-            margin-bottom: 72px;
-        }
+.logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-bottom: 16px;
+}
 
-        .page-footer-text {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            color: #f4f4fd;
-            width: 264px;
-            text-align: left;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+.footer-logo {
+    margin-bottom: 72px;
+}
 
-        .box-link {
-            margin-bottom: 72px;
-        }
-       
-        .social-text {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            color: #fff;
-            text-align: center;
-            margin-bottom: 16px;
-        }
-    
-        .social-list-footer {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .social-link-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #4d5ae5;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+.page-footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    width: 264px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-        .social-list-svg {
-            fill: #f4f4fd;
-        }
+.box-link {
+    margin-bottom: 72px;
+}
 
-        .text-input-telegram {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            color: #fff;
-            text-align: center;
-            margin-bottom: 16px;
-        }
+.social-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 16px;
+}
 
-        .form-for-telegram {
-            display: flex;
-            flex-wrap: wrap;
-        }        
+.social-list-footer {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
 
-        .input-for-contacts-footer {
-            padding: 8px 16px;
-            font-size: 12px;
-            line-height: 2;
-            letter-spacing: 0.04em;
-            background-color: transparent;
-            border: 1px solid #fff;
-            border-radius: 4px;
-            width: 288px;
-            height: 40px;
-            color: #fff;
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-            outline: transparent;
-            opacity: 0.3;
-        }
+.social-link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-        .btn-for-telegram {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 4px;
-            border: none;
-            padding: 8px 24px;
-            min-width: 165px;
-            height: 40px;
-            cursor: pointer;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.04em;
-            text-align: center;
-            margin: 0 auto;
-            color: #fff;
-            background-color: #4d5ae5;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    
-        .svg-for-telegram {
-            fill: #fff;
-            margin-left: 16px;
-        }
-    
-        .box-for-input-btn {
-            margin-bottom: 16px;
-        }
+.social-list-svg {
+    fill: #f4f4fd;
+}
 
+.text-input-telegram {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 16px;
+}
 
+.form-for-telegram {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-for-contacts-footer {
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 288px;
+    height: 40px;
+    color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    outline: transparent;
+    opacity: 0.3;
+}
+
+.btn-for-telegram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-for-telegram {
+    fill: #fff;
+    margin-left: 16px;
+}
+
+.box-for-input-btn {
+    margin-bottom: 16px;
+}
 
 
 /* footer tablet */
