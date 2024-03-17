@@ -1021,10 +1021,11 @@ icon-class-svg:focus {
 
 .our-own-checkbox {
     display: inline-flex;
+    flex-shrink: 0;
     margin: auto;
     justify-content: center;
     align-items: center;
-    width: 20px;
+    width: 16px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1214,3 +1215,5 @@ icon-class-svg:focus {
         display: none;
     }
 }
+
+
